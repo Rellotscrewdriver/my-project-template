@@ -1,10 +1,31 @@
-## Explain what changes you have made
-changed this project's version number and added this new feature or a bug fixed
+**IMPORTANT: Please do not create a Pull Request without creating an issue first.**
 
-## Assigned Issue Number ? { if does not exist then create one }
-#007
+*Any change needs to be discussed before proceeding. Failure to do so may result
+in the rejection of the pull request.*
 
-### Checklist
-- [ ] I've read the contribution guidelines.
-- [ ] I've referred the correct issue number.
-- [ ] I've fill up this entire template correctly.
+Please provide enough information so that others can review your pull request. You
+can skip this if you're fixing a typo or adding an app to the Showcase.
+
+Explain the **details** for making this change. What existing problem does the pull
+request solve?
+
+Ex:
+
+1. If you "Added a/changed the function to do X", explain why:
+
+    * it is necessary to have a way to do X.
+    * if there already exists a way, why is your implementation better
+
+2. If you "Fixed bug/error in X", explain:
+
+    * what was the bug/error (if you already made an issue, please link to it here)
+    * how does your implementation fix the issue
+
+#### Closing Issues
+
+Put `closes #XXXX` in your comment to auto-close the issue that your PR fixes
+(if such).
+
+---
+
+Fixes #XXXX
