@@ -1,0 +1,6 @@
+title: my project template
+description: 
+files:
+  - "include/*.h"
+  - "src/*.cpp"
+

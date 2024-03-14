@@ -22,7 +22,7 @@ this repo contains the boilerplate for my future projects so I don't have to cre
 - GNU make / Ninja
 - GCC / Clang / MSVC
 - AStyle
-- Doxygen
+- Doxide and mkdocs + mkdocs-material
 
 ### Setup
 clone the repo with submodules
@@ -41,6 +41,27 @@ build the project
 cmake --build build
 ```
 then run the 'template' or 'utest' program
+
+### Generating the documentation
+
+
+Build the Markdown documentation with:
+```
+doxide build
+```
+This will populate the output directory (default: docs).
+
+To publish your documentation with Material for MkDocs, use:
+```
+mkdocs build
+```
+This will populate the site subdirectory with HTML, CSS, and JavaScript files. This directory can be published.
+
+To serve the documentation locally, use:
+```
+mkdocs serve
+```
+and point your browser to the URL reported, usually localhost:8000.
 
 ##  Contributions
 
