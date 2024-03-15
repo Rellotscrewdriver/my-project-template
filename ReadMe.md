@@ -14,6 +14,7 @@ this repo contains the boilerplate for my future projects so I don't have to cre
 - Make / Ninja are used for build system
 - Googletest for testing and mocking
 - Github Actons for CI/CD
+- clang-format for automatically format code
 
 ## Setting up the project
 
@@ -21,7 +22,7 @@ this repo contains the boilerplate for my future projects so I don't have to cre
 - CMake
 - GNU make / Ninja
 - GCC / Clang / MSVC
-- AStyle
+- clang-format
 - Doxide and mkdocs + mkdocs-material
 
 ### Setup
