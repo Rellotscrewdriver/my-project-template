@@ -10,7 +10,7 @@ this repo contains the boilerplate for my future projects so I don't have to cre
 
 ## Toolset
 - CMake for build system generator
-- Doxygen for generating documentation
+- Doxide for generating documentation
 - Make / Ninja are used for build system
 - Googletest for testing and mocking
 - Github Actons for CI/CD
