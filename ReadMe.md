@@ -21,7 +21,8 @@ this repo contains the boilerplate for my future projects so I don't have to cre
 ### Dependencies
 - CMake
 - GNU make / Ninja
-- GCC / Clang / MSVC
+- GCC / Clang / MSVC(windows)
+- Vcpkg
 - clang-format
 - Doxide and mkdocs + mkdocs-material
 
@@ -32,14 +33,15 @@ git clone --recurse-submodules https://github.com/Rellotscrewdriver/my-project-t
 ```
 
 goto the cloned repo and configure the project
+make sure you have [vcpkg](https://github.com/microsoft/vcpkg?tab=readme-ov-file#getting-started) installed and renamed it to simple 'vcpkg' and put it in home directory 
 ```
 cd my-project-template
-sudo cmake -S . -B build
+cmake -S . -B build
 ```
 
 build the project
 ```
-sudo cmake --build build
+cmake --build build
 ```
 then run the program
 
