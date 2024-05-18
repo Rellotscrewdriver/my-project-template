@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <fmt/core.h>
 #include "dog.h"
 using namespace std;
 
@@ -19,8 +19,12 @@ template <class T>
 int f(int x, int& y);
 
 /**
- * @brief
+ * @brief this is a main function
  *
  * @return int
  */
-int main() { dog* d = new dog("Milky", 5); }
+int main() { 
+    dog* d = new dog("Milky", 5);
+    fmt::print("Hello, {}!\n", "world");
+    return 0;
+}

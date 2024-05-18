@@ -34,14 +34,14 @@ git clone --recurse-submodules https://github.com/Rellotscrewdriver/my-project-t
 goto the cloned repo and configure the project
 ```
 cd my-project-template
-cmake -S . -B build
+sudo cmake -S . -B build
 ```
 
 build the project
 ```
-cmake --build build
+sudo cmake --build build
 ```
-then run the 'template' or 'utest' program
+then run the program
 
 ### Generating the documentation
 
