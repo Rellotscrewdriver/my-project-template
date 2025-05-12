@@ -10,7 +10,7 @@ target_include_directories(dog PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 add_executable(template src/main.cpp)
 target_include_directories(template PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 target_link_libraries(template PUBLIC dog)
-target_link_libraries(template PRIVATE fmt::fmt)
+target_link_libraries(template PRIVATE fmt)
 
 add_subdirectory(libs/googletest)
 add_subdirectory(tests)
