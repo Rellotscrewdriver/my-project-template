@@ -1,10 +1,9 @@
 cmake_minimum_required(VERSION 3.15)
-set(CMAKE_TOOLCHAIN_FILE "libs/vcpkg/scripts/buildsystems/vcpkg.cmake")
+set(CMAKE_CXX_SCAN_FOR_MODULES ON)
 
 project(template)
-find_package(fmt)
 
-
+add_subdirectory(libs/fmt)
 add_library(dog src/dog.cpp)
 target_include_directories(dog PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
