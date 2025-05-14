@@ -3,7 +3,7 @@ this repo contains the boilerplate for my future projects so I don't have to cre
 
 ## Project Structure
 - `include` is for containing header files
-- `docs` is to contains doxyfile for documentation generator
+- `docs` contains generated documentation by doxide and mkdocs
 - `libs` is for containing external libraries' source code which builds with the main project
 - `src` is containing the main program's source code
 - `tests` is for containing unit tests to test various parts of the software
@@ -13,7 +13,7 @@ this repo contains the boilerplate for my future projects so I don't have to cre
 - Doxide for generating documentation
 - Make / Ninja are used for build system
 - Googletest for testing and mocking
-- Github Actons for CI/CD
+- Docker for CI/CD
 - clang-format for automatically format code
 
 ## Setting up the project
@@ -22,7 +22,6 @@ this repo contains the boilerplate for my future projects so I don't have to cre
 - CMake
 - GNU make / Ninja
 - GCC / Clang / MSVC(windows)
-- Vcpkg
 - clang-format
 - Doxide and mkdocs + mkdocs-material
 
@@ -33,7 +32,6 @@ git clone --recurse-submodules https://github.com/Rellotscrewdriver/my-project-t
 ```
 
 goto the cloned repo and configure the project
-make sure you have [vcpkg](https://github.com/microsoft/vcpkg?tab=readme-ov-file#getting-started) installed and renamed it to simple 'vcpkg' and put it in home directory 
 ```
 cd my-project-template
 cmake -S . -B build
@@ -80,3 +78,6 @@ People usually like to see how it looks before downloading the product.
 
 this project is free to use and distribute as long as you don't claim that you wrote the original software.
 crediting of this project is required when it is modified and/or distributed. goto <a href="https://github.com/Rellotscrewdriver/my-project-template/blob/master/LICENSE">LICENSE</a> for more details 
+
+
+
