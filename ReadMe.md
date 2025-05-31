@@ -11,29 +11,28 @@ this repo contains the boilerplate for my future projects so I don't have to cre
 ## Toolset
 - CMake for build system generator
 - Doxide for generating documentation
-- Make / Ninja are used for build system
 - Googletest for testing and mocking
-- Docker for CI/CD
-- clang-format for automatically format code
+- Docker & github actions for CI/CD
+- clang-format to automatically format code
 
 ## Setting up the project
 
-### Dependencies
+### External Dependencies
 - CMake
 - GNU make / Ninja
-- GCC / Clang / MSVC(windows)
+- GCC / Clang / MSVC(windows only)
 - clang-format
 - Doxide and mkdocs + mkdocs-material
 
 ### Setup
 clone the repo with submodules
 ```
-git clone --recurse-submodules https://github.com/Rellotscrewdriver/my-project-template.git
+git clone --recurse-submodules https://github.com/Rellotscrewdriver/my-project-template.git myt
 ```
 
 goto the cloned repo and configure the project
 ```
-cd my-project-template
+cd myt
 cmake -S . -B build
 ```
 
@@ -62,6 +61,4 @@ People usually like to see how it looks before downloading the product.
 
 this project is free to use and distribute as long as you don't claim that you wrote the original software.
 crediting of this project is required when it is modified and/or distributed. goto <a href="https://github.com/Rellotscrewdriver/my-project-template/blob/master/LICENSE">LICENSE</a> for more details 
-
-
 
