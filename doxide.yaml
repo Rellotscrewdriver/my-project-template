@@ -1,5 +1,6 @@
 title: my project template
 description: 
+output: docs
 files:
   - "include/*.h"
   - "src/*.cpp"
