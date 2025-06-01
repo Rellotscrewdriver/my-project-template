@@ -21,18 +21,18 @@ this repo contains the boilerplate for my future projects so I don't have to cre
 - CMake
 - GNU make / Ninja
 - GCC / Clang / MSVC(windows only)
-- clang-format
-- Doxide and mkdocs + mkdocs-material
+- clang-format(optional)
+- Doxide and mkdocs + mkdocs-material(optional)
 
 ### Setup
 clone the repo with submodules
 ```
-git clone --recurse-submodules https://github.com/Rellotscrewdriver/my-project-template.git myt
+git clone --recurse-submodules https://github.com/Rellotscrewdriver/my-project-template.git mpt
 ```
 
 goto the cloned repo and configure the project
 ```
-cd myt
+cd mpt
 cmake -S . -B build
 ```
 
@@ -44,7 +44,7 @@ then run the program
 
 ### Generating the documentation
 
-run the `doc.sh` script to avoid typing commands manually everytime
+run the `gendocs.sh` script to avoid typing commands manually everytime
 after running go to your browser and type `localhost:8000` to see the generated documentation
 
 ##  Contributions
