@@ -45,7 +45,27 @@ then run the program
 ### Generating the documentation
 
 run the `gendocs.sh` script to avoid typing commands manually everytime
-after running go to your browser and type `localhost:8000` to see the generated documentation
+after running go to your browser and type `localhost:8000` to see the generated documentation.
+
+if you're using windows you can rename the `gendocs.sh` file to `gendocs.bat`
+
+## Adding Internal Libraries
+
+This project template currently uses git submodules to manage internal libraries in the `libs` folder.
+to add the library into this project(not in this template)
+```
+git submodule add <github_link> libs/<library>
+```
+
+add the cloned directory to CMakeLists.txt
+```
+add_subdirectory(libs/<library>)
+```
+link the library to the main project 
+```
+target_link_libraries(${PROJECT_NAME} PRIVATE <library_linkers>)
+```
+**NOTE:** the linker name will be different for each library you trying to add so make sure to read their documentation on how to link their libraries through CMake 
 
 ##  Contributions
 
