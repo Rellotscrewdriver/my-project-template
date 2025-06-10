@@ -8,7 +8,7 @@ ENV CMAKE_PREFIX_PATH=/usr/lib/cmake
 WORKDIR /app
 
 # Install CMake and git
-RUN pacman -Sy --noconfirm git cmake ninja clang
+RUN pacman -Sy --noconfirm cmake ninja clang
 
 # Copy the source
 COPY . .
