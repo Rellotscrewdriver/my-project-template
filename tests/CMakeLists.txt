@@ -1,4 +1,4 @@
 enable_testing()
-set(sources test.cpp)
-add_executable(utest ${sources})
-target_link_libraries(utest PUBLIC GTest::gtest_main)
+file(GLOB_RECURSE PROJECT_SOURCES "*.cpp")
+add_executable(utest ${PROJECT_SOURCES})
+target_link_libraries(utest PRIVATE GTest::gtest_main GTest::gmock_main)
