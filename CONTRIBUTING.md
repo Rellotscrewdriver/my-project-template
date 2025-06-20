@@ -16,7 +16,7 @@ Include the relevant issue number if applicable and it follows the template
 ### Do you intend to add a new feature or change an existing one?
 
 Submitting changes
-Please send a GitHub Pull Request to DIC with a clear list of what you've done (read more about pull requests). When you send a pull request. We can always use more test coverage. Please follow our Coding Guidelines (below) and make sure all of your commits are atomic (one feature per commit).</br></br>
+Please send a GitHub Pull Request to <project_name> with a clear list of what you've done (read more about pull requests). When you send a pull request. We can always use more test coverage. Please follow our Coding Guidelines (below) and make sure all of your commits are atomic (one feature per commit).</br></br>
 
 Always write a clear log message for your commits. One-line messages are fine for small changes, but bigger changes should look like this:
 
@@ -30,7 +30,7 @@ If you make changes in a file that still uses another coding style, make sure th
 For programming languages other than C++ (e.g. JavaScript) used in this repository and submodules, unless otherwise specified, coding guidelines listed here applies as much as possible.
 
 **Note:** I will not take your head if you forget and use another style. However, most probably the request will be delayed until you fix your coding style. \
-**Note 2:** You can use the `Astyle` program/tool to clean up any source file.
+**Note 2:** You can use the `fmtallfiles` script which uses 'AStyle' to clean up any source file.
 
 ## Table Of Contents
 
@@ -219,7 +219,7 @@ UTF-8 and Unix-like line ending (LF). Unless some platform specific files need o
 
 ## 4. Initialization lists
 
-Initialization lists should be vertical. This will allow for more easily readable diffs. The initialization colon should be indented and in its own line along with first argument. The rest of the arguments should be indented too and have the comma prepended.
+Initialization lists should be horizontal. This will allow for more easily readable diffs. The initialization colon should be indented and in its own line along with first argument. The rest of the arguments should be indented too and have the comma prepended.
 
 ```c++
 myClass::myClass(int a, int b, int c, int d) : m_a {a}, m_b {b}, m_c {c}, m_d {d}{

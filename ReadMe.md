@@ -13,15 +13,15 @@ this repo contains the boilerplate for my future projects so I don't have to cre
 - Doxide for generating documentation
 - Googletest for testing and mocking
 - Docker & github actions for CI/CD
-- clang-format to automatically format code
+- AStyle to automatically format code
 
 ## Setting up the project
 
-### External Dependencies
+### External Dependencies(if you're new to C++)
 - CMake
-- GNU make / Ninja
-- GCC / Clang / MSVC(windows only)
-- clang-format(optional)
+- GNU make or Ninja
+- GCC or Clang or MSVC(windows only)
+- AStyle(optional)
 - Doxide and mkdocs + mkdocs-material(optional)
 
 ### Setup
@@ -47,7 +47,7 @@ then run the program
 run the `gendocs.sh` script to avoid typing commands manually everytime
 after running go to your browser and type `localhost:8000` to see the generated documentation.
 
-if you're using windows you can rename the `gendocs.sh` file to `gendocs.bat`
+if you're using windows you can rename the `gendocs.sh` file to `gendocs.bat`. Ditto `fmtallfiles.sh`
 
 ## Adding Internal Libraries
 
