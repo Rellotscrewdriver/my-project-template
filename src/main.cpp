@@ -19,7 +19,7 @@ template <class T>
 int f(int x, int& y);
 
 /**
- * @brief this is a main function
+ * this is a main function
  *
  * @return int
  */

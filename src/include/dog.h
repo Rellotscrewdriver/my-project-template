@@ -1,7 +1,7 @@
 #include <iostream>
 
 /**
- * @brief this is a doggo class
+ * this is a doggo class
  *
  */
 class dog {
